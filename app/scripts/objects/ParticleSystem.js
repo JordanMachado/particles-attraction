@@ -175,6 +175,7 @@ export default class ParticleSystem extends THREE.Object3D {
       vertexShader: glslify('../shaders/particle/index.vert'),
       fragmentShader: glslify('../shaders/particle/index.frag'),
       blending: THREE.AdditiveBlending,
+      transparent:true,
     });
 
     this.system = new THREE.Points(this.geom, this.mat);

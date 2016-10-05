@@ -49,7 +49,7 @@ export default class WebGL {
     this.renderer = new THREE.WebGLRenderer();
     this.renderer.setSize(params.size.width, params.size.height);
     this.renderer.setClearColor(0x262626);
-    this.renderer.setClearColor(0xffffff);
+    // this.renderer.setClearColor(0xffffff);
 
 
     this.composer = null;
