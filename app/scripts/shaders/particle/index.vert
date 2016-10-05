@@ -13,8 +13,7 @@ void main() {
 	vVel = velocity.xyz;
 	vec3 p = buffer.xyz;
 	vColor = color;
-	gl_PointSize = 2.0 * (velocity.x + velocity.y + velocity.z);
-
+	gl_PointSize = 2.0 * length(velocity);
 	gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.0);
 
 }
